@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.flag{
+    background: #fff;
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background: red;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+.insta{
+    width: 500px;
+    height: 500px;
+    background: rgb(223,42,254);
+    background: linear-gradient(225deg, rgba(223,42,254,1) 0%, rgb(161, 148, 70) 35%, rgba(236,166,64,1) 72%, rgba(255,245,0,1) 100%);
+    border-radius: 100px;
+}
+
+.line{
+    width: 400px;
+    height: 400px;
+    border: 30px solid white;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    border-radius: 100px;
+}
+
+.insta-circle{
+    border-radius: 50%;
+    border: 30px solid white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+
+.insta-circle::after{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    content: '';
+    left: 160px;
+    top: -200px;
+}
